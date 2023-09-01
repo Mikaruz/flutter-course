@@ -64,4 +64,19 @@ const appMenuItems = <MenuItem>[
       subTitle: 'Cambiar tema de la aplicación',
       link: '/theme-changer',
       icon: Icons.color_lens_outlined),
+  MenuItem(
+      title: 'Cubit Counter',
+      subTitle: 'Gestor con Cubit',
+      link: '/cubit',
+      icon: Icons.ads_click_outlined),
+  MenuItem(
+      title: 'Bloc Counter',
+      subTitle: 'Gestor con Bloc',
+      link: '/bloc',
+      icon: Icons.add_to_queue_outlined),
+  MenuItem(
+      title: 'Login',
+      subTitle: 'Testeo de Login',
+      link: '/login-screen',
+      icon: Icons.login_outlined),
 ];

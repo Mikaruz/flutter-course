@@ -26,4 +26,10 @@ final appRouter = GoRouter(routes: [
   GoRoute(
       path: '/theme-changer',
       builder: (context, state) => const ThemeChangerScreen()),
+  GoRoute(
+      path: '/cubit', builder: (context, state) => const CubitCounterScreen()),
+  GoRoute(
+      path: '/bloc', builder: (context, state) => const BlocCounterScreen()),
+  GoRoute(
+      path: '/login-screen', builder: (context, state) => const LoginScreen()),
 ]);
