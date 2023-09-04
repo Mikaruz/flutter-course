@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "267342947195",
+    "project_id": "flutter-projects-fab94",
+    "storage_bucket": "flutter-projects-fab94.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:267342947195:android:ed84cd69813e09c4c8d3de",
+        "android_client_info": {
+          "package_name": "com.mikaruz.widgets_app"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "267342947195-ufiic22d35j82f0knvdgd2285b55u28p.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDC11KoQCEReZqvcn7nJWkLCBY-qyQtvEk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "267342947195-ufiic22d35j82f0knvdgd2285b55u28p.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

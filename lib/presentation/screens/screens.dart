@@ -1,3 +1,5 @@
+export 'package:widgets_app/presentation/screens/notifications/notifications_screen.dart';
+export 'package:widgets_app/presentation/screens/notifications/details_screen.dart';
 export 'package:widgets_app/presentation/screens/blocs/cubit_counter_screen.dart';
 export 'package:widgets_app/presentation/screens/blocs/bloc_counter_screen.dart';
 export 'package:widgets_app/presentation/screens/theme_changer/theme_changer_screen.dart';

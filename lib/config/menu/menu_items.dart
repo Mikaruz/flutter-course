@@ -79,4 +79,9 @@ const appMenuItems = <MenuItem>[
       subTitle: 'Testeo de Login',
       link: '/login-screen',
       icon: Icons.login_outlined),
+  MenuItem(
+      title: 'Notificaciones',
+      subTitle: 'Test de notificaciones',
+      link: '/notifications',
+      icon: Icons.settings),
 ];

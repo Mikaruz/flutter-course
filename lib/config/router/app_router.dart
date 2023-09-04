@@ -32,4 +32,12 @@ final appRouter = GoRouter(routes: [
       path: '/bloc', builder: (context, state) => const BlocCounterScreen()),
   GoRoute(
       path: '/login-screen', builder: (context, state) => const LoginScreen()),
+  GoRoute(
+      path: '/notifications',
+      builder: (context, state) => const NotificationsScreen()),
+  GoRoute(
+      path: '/push-details/:messageId',
+      builder: (context, state) => DetailsScreen(
+            pushMessageId: state.pathParameters['messageId'] ?? '',
+          )),
 ]);
