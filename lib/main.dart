@@ -2,6 +2,7 @@ import 'package:firebase_messaging/firebase_messaging.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
+import 'package:widgets_app/config/local_notifications.dart/local_notifications.dart';
 import 'package:widgets_app/config/router/app_router.dart';
 import 'package:widgets_app/config/theme/app_theme.dart';
 import 'package:widgets_app/presentation/blocs/notifications/notifications_bloc.dart';
@@ -11,13 +12,18 @@ void main() async {
   WidgetsFlutterBinding.ensureInitialized();
   FirebaseMessaging.onBackgroundMessage(firebaseMessagingBackgroundHandler);
 
+  await LocalNotifications.initializeLocalNotifications();
   await NotificationsBloc.initializeFirebaseNotifications();
   runApp(
       //Riverpod:
       //const ProviderScope(child: MainApp()),
-      MultiBlocProvider(
-          providers: [BlocProvider(create: (_) => NotificationsBloc())],
-          child: const MainApp()));
+      MultiBlocProvider(providers: [
+    BlocProvider(
+        create: (_) => NotificationsBloc(
+            requestLocalNotificationPermission:
+                LocalNotifications.requestPermissionLocalNotifications,
+            showLocalNotification: LocalNotifications.showLocalNotification))
+  ], child: const MainApp()));
 }
 
 class MainApp extends ConsumerWidget {
